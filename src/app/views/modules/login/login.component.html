@@ -1,0 +1,31 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+      <div class="card card-signin my-5">
+        <div class="card-body">
+          <h5 class="card-title text-center">Sign In</h5>
+          <form class="form-signin">
+            <div class="ui-g-12">
+              <div class="ui-g-4">
+                <label for="">{{ 'username' | translate }}</label>
+              </div>
+              <div class="ui-g-1">:</div>
+              <div class="ui-g-7"><input type="text" pInputText /></div>
+            </div>
+
+            <div class="ui-g-12">
+              <div class="ui-g-4">
+                <label for="">{{ 'password' | translate }}</label>
+              </div>
+              <div class="ui-g-1">:</div>
+              <div class="ui-g-7"><input type="password" pInputText /></div>
+            </div>
+            <div class="ui-g-12 text-center">
+              <button pButton type="button" label="{{'login' | translate}}" (click)="onSubmit()"></button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
